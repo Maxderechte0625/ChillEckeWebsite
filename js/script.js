@@ -148,7 +148,7 @@ const getDiscordOnlineUsers = async () => {
     try {
         const discordServerId = config.serverInfo.discordServerID;
 
-        const apiWidgetUrl = `https://discord.com/api/guilds/${discordServerId}/widget.json`;
+        const apiWidgetUrl = `https://discord.com/api/guilds/1182307029969293402/widget.json`;
         let response = await fetch(apiWidgetUrl);
         let data = await response.json();
 
