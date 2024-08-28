@@ -828,3 +828,7 @@
         max-width: 100%;
     }
 }
+
+.minecraft-server-ip {
+    text-shadow: 0px 0px 5px #00000069;
+}
