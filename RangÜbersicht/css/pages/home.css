@@ -806,3 +806,110 @@
 .minecraft-server-ip {
     text-shadow: 0px 0px 5px #00000069;
 }
+
+.table-container {
+    width: 100%;
+    margin: auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .table-container {
+    width: 100%;
+    margin: auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto; /* Ermöglicht horizontales Scrollen */
+  }
+  
+  table {
+    width: 100%;
+    min-width: 600px; /* Mindestbreite für die Tabelle, damit sie auf kleinen Geräten scrollbar ist */
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    background-color: #202326;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 15vh;
+    transition: 0.2s;
+  }
+  
+  tbody td {
+    background-color: var(--background-color);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Hover-Effekte */
+  tbody tr:hover {
+    background-color: var(--background-color);
+  }
+  
+  /* Prefix Styling */
+  td:has([Farmer]) {
+    color: #4caf50; /* Farmer grün */
+  }
+  
+  td:has([Premium]), td:has([Premium+]) {
+    color: #2196f3; /* Premium blau */
+  }
+  
+  td:has([VIP]), td:has([VIP+]) {
+    color: #f44336; /* VIP rot */
+  }
+  
+  /* Ja/Nein Styling (Haken/Kreuz) */
+  td:contains("✔️") {
+    color: #4caf50;
+  }
+  
+  td:contains("❌") {
+    color: #f44336;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .table-container {
+        width: 100%; /* Verkleinert den Container auf mobilen Geräten */
+    }
+  
+    table {
+        min-width: unset; /* Setzt die Mindestbreite zurück, damit die Tabelle gut scrollen kann */
+    }
+  }
+  
+  .bigger:hover {
+    transform: scale(1.1);
+    transition: transform .2s ease-out;
+  }
+  
+  
+  .category-row td {
+    background-color: #444;
+    color: var(--main-color);
+    font-weight: bold;
+    text-align: left;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+  }
